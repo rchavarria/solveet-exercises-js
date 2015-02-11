@@ -1,6 +1,8 @@
 module.exports = function Palindrome() {
-    this.foo = function () {
-        console.log('foo');
-    };
+
+    this.reverse = function (n) {
+        return n;
+    }
+
 }
 

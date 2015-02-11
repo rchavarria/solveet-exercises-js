@@ -2,10 +2,13 @@
 describe('Palindrome Numbers', function() {
     var Palindrome = require('../../../src/scripts/palindromeNumbers/palindromeNumbers.js');
 
-    it('hooks up tests', function() {
+    describe('#reverse', function () {
         var palindrome = new Palindrome();
-        palindrome.foo();
-        expect(2 + 2).equals(4);
+
+        it('reverses digits', function () {
+            expect(palindrome.reverse(11)).equals(11);
+        });
+
     });
 
 });
