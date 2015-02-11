@@ -1,8 +1,8 @@
 module.exports = function Palindrome() {
 
     this.reverse = function (n) {
-        return n;
-    }
+        return parseInt(n.toString().split('').reverse().join(''), 10);
+    };
 
 }
 

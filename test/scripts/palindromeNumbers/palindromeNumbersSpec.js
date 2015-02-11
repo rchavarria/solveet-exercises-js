@@ -7,6 +7,8 @@ describe('Palindrome Numbers', function() {
 
         it('reverses digits', function () {
             expect(palindrome.reverse(11)).equals(11);
+            expect(palindrome.reverse(123)).equals(321);
+            expect(palindrome.reverse(10134)).equals(43101);
         });
 
     });
