@@ -4,7 +4,7 @@ A set of solutions to [Solveet] exercises writen in JavaScript (ES6)
 
 ## Requirements
 
-- [io.js]()
+- [io.js](http://iojs.org)
 
 ## Project structure
 
