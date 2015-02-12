@@ -22,6 +22,12 @@ describe('Palindrome Numbers', function() {
             expect(palindrome.isPalindrome(123454321)).equals(true);
         });
 
+        it('not if it is read differently from left to right that right to left', function () {
+            expect(palindrome.isPalindrome(12)).equals(false);
+            expect(palindrome.isPalindrome(123)).equals(false);
+            expect(palindrome.isPalindrome(9876543)).equals(false);
+        });
+
     });
 
 });
