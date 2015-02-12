@@ -1,4 +1,4 @@
-# Solveet Exercises in JavaScript
+# Solveet Exercises in JavaScript [![Build Status](https://travis-ci.org/rchavarria/solveet-exercises-js.svg?branch=master)](https://travis-ci.org/rchavarria/solveet-exercises-js)
 
 A set of solutions to [Solveet] exercises writen in JavaScript (ES6)
 
