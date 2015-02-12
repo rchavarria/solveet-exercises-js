@@ -13,4 +13,15 @@ describe('Palindrome Numbers', function() {
 
     });
 
+    describe('#isPalindrome', function () {
+        var palindrome = new Palindrome();
+
+        it('if it is equally read from left to right that right to left', function () {
+            expect(palindrome.isPalindrome(11)).equals(true);
+            expect(palindrome.isPalindrome(101)).equals(true);
+            expect(palindrome.isPalindrome(123454321)).equals(true);
+        });
+
+    });
+
 });

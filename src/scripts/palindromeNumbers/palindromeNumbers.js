@@ -4,5 +4,9 @@ module.exports = function Palindrome() {
         return parseInt(n.toString().split('').reverse().join(''), 10);
     };
 
+    this.isPalindrome = function (n) {
+        return n.toString() === this.reverse(n).toString();
+    };
+
 }
 
