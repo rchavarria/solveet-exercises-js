@@ -1,4 +1,5 @@
 module.exports = function Palindrome() {
+    'use strict';
 
     this.reverse = function (n) {
         return parseInt(n.toString().split('').reverse().join(''), 10);
@@ -8,5 +9,5 @@ module.exports = function Palindrome() {
         return n.toString() === this.reverse(n).toString();
     };
 
-}
+};
 

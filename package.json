@@ -21,6 +21,7 @@
     "chai": "~1.9.1",
     "sinon": "~1.10.3",
     "mocha": "~1.21.4",
-    "gulp-mocha": "~1.1.0"
+    "gulp-mocha": "~1.1.0",
+    "gulp-jslint": "~0.2.2"
   }
 }
