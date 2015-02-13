@@ -30,4 +30,13 @@ describe('Palindrome Numbers', function() {
 
     });
 
+    describe('#sumIsPalindrome', function () {
+        var palindrome = new Palindrome();
+
+        test('the sum of a number and its reverse is palindrome', function () {
+            expect(palindrome.sumIsPalindrome(11)).equals(true);
+        });
+
+    });
+
 });
