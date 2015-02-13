@@ -10,7 +10,7 @@ gulp.task('jslint', function () {
         }));
 });
 
-gulp.task('test', function () {
+gulp.task('test', ['jslint'], function () {
     return gulp
         .src(['test/bootstrap.js', 'test/scripts/**/*.js'])
         .pipe(mocha({ reporter: 'spec' }));
