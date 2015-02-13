@@ -9,5 +9,10 @@ module.exports = function Palindrome() {
         return n.toString() === this.reverse(n).toString();
     };
 
+    this.sumIsPalindrome = function (n) {
+        var sum = n + this.reverse(n);
+        return this.isPalindrome(sum);
+    };
+
 };
 

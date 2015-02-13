@@ -1,19 +1,19 @@
 {
-  "name": "nodejs-module-template",
+  "name": "solveet-exercises-js",
   "version": "0.0.0",
-  "description": "Template for NodeJS modules that uses Gulp, Mocha and Chai",
+  "description": "A set of solutions for Solveet exercises",
   "main": "index.js",
   "scripts": {
     "test": "gulp test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rchavarria/nodejs-module-template.git"
+    "url": "https://github.com/rchavarria/solveet-exercises-js.git"
   },
   "author": "Rubén Chavarría http://rchavarria.github.io",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/rchavarria/nodejs-module-template/issues"
+    "url": "https://github.com/rchavarria/solveet-exercises-js/issues"
   },
   "devDependencies": {
     "gulp": "~3.8.8",
