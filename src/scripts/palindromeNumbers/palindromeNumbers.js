@@ -9,7 +9,8 @@ module.exports = function Palindrome() {
     };
 
     this.sumIsPalindrome = function (n) {
-        return true;
+        var sum = n + this.reverse(n);
+        return this.isPalindrome(sum);
     };
 
 }

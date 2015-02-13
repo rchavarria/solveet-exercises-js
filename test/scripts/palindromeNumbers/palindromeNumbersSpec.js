@@ -37,6 +37,10 @@ describe('Palindrome Numbers', function() {
             expect(palindrome.sumIsPalindrome(11)).equals(true);
         });
 
+        it('the sum of a number and its reverse is NOT palindrome', function () {
+            expect(palindrome.sumIsPalindrome(48)).equals(false);
+        });
+
     });
 
 });
