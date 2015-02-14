@@ -14,11 +14,6 @@ module.exports = function Palindrome(candidateNumber, maxNumberOfIterations) {
     };
 
     this.sumIsPalindrome = function () {
-        var sum = number + this.reverse(number);
-        return this.isPalindrome(sum);
-    };
-
-    this.sumIsPalindromeRecursively = function () {
         currentIteration += 1;
         if (currentIteration > maxIterations) {
             return false;
@@ -30,7 +25,7 @@ module.exports = function Palindrome(candidateNumber, maxNumberOfIterations) {
         if (palindrome) {
             return true;
         }
-        return this.sumIsPalindromeRecursively(number);
+        return this.sumIsPalindrome(number);
     };
 
 };

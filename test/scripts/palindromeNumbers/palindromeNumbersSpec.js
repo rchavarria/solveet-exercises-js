@@ -43,13 +43,9 @@ describe('Palindrome Numbers', function () {
             expect(p.sumIsPalindrome()).equals(false);
         });
 
-    });
-
-    describe('#sumIsPalindromeRecursively', function () {
-
-        it('iterates until it founds a palindrome number', function () {
-            var severalIterationsPalindrome = new Palindrome(48, 2);
-            expect(severalIterationsPalindrome.sumIsPalindromeRecursively(48)).equals(true);
+        it('the sum of a number and its reverse after some iterations', function () {
+            var p = new Palindrome(48, 2);
+            expect(p.sumIsPalindrome()).equals(true);
         });
 
     });
