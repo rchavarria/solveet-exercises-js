@@ -23,4 +23,15 @@ describe('Palindrome Numbers', function () {
 
     });
 
+    describe('Specific examples', function () {
+
+        it('187 needs at least 23 iterations', function () {
+            var palindrome = new Palindrome(187, 22);
+            expect(palindrome.sumIsPalindrome()).equals(false);
+            palindrome = new Palindrome(187, 23);
+            expect(palindrome.sumIsPalindrome()).equals(true);
+        });
+
+    });
+
 });
