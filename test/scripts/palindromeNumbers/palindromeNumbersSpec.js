@@ -34,11 +34,13 @@ describe('Palindrome Numbers', function () {
     describe('#sumIsPalindrome', function () {
 
         it('the sum of a number and its reverse is palindrome', function () {
-            expect(palindrome.sumIsPalindrome(11)).equals(true);
+            var p = new Palindrome(11, 1);
+            expect(p.sumIsPalindrome()).equals(true);
         });
 
         it('the sum of a number and its reverse is NOT palindrome at first iteration', function () {
-            expect(palindrome.sumIsPalindrome(48)).equals(false);
+            var p = new Palindrome(48, 1);
+            expect(p.sumIsPalindrome()).equals(false);
         });
 
     });

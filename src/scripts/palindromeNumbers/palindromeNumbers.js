@@ -13,8 +13,8 @@ module.exports = function Palindrome(candidateNumber, maxNumberOfIterations) {
         return n.toString() === this.reverse(n).toString();
     };
 
-    this.sumIsPalindrome = function (n) {
-        var sum = n + this.reverse(n);
+    this.sumIsPalindrome = function () {
+        var sum = number + this.reverse(number);
         return this.isPalindrome(sum);
     };
 
