@@ -5,12 +5,12 @@ module.exports = function Palindrome(candidateNumber, maxNumberOfIterations) {
         maxIterations = maxNumberOfIterations,
         currentIteration = 0;
 
-    this.reverse = function (n) {
+    function reverse(n) {
         return parseInt(n.toString().split('').reverse().join(''), 10);
-    };
+    }
 
     this.isPalindrome = function (n) {
-        return n.toString() === this.reverse(n).toString();
+        return n.toString() === reverse(n).toString();
     };
 
     this.sumIsPalindrome = function () {
@@ -19,7 +19,7 @@ module.exports = function Palindrome(candidateNumber, maxNumberOfIterations) {
             return false;
         }
 
-        number += this.reverse(number);
+        number += reverse(number);
         var palindrome = this.isPalindrome(number);
 
         if (palindrome) {

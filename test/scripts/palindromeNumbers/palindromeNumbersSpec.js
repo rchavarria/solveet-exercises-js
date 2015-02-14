@@ -5,16 +5,6 @@ describe('Palindrome Numbers', function () {
     var Palindrome = require('../../../src/scripts/palindromeNumbers/palindromeNumbers.js'),
         palindrome = new Palindrome(1, 1);
 
-    describe('#reverse', function () {
-
-        it('reverses digits', function () {
-            expect(palindrome.reverse(11)).equals(11);
-            expect(palindrome.reverse(123)).equals(321);
-            expect(palindrome.reverse(10134)).equals(43101);
-        });
-
-    });
-
     describe('#isPalindrome', function () {
 
         it('if it is equally read from left to right that right to left', function () {
