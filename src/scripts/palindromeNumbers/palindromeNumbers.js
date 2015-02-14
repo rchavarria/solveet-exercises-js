@@ -14,5 +14,14 @@ module.exports = function Palindrome() {
         return this.isPalindrome(sum);
     };
 
+    this.sumIsPalindromeRecursively = function (n) {
+        var palindrome = this.sumIsPalindrome(n);
+
+        if (palindrome) {
+            return true;
+        }
+        return this.sumIsPalindromeRecursively(n + this.reverse(n));
+    };
+
 };
 
