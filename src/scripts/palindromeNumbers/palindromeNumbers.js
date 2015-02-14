@@ -1,7 +1,7 @@
 module.exports = function Palindrome(maxNumberOfIterations) {
     'use strict';
 
-    var maxIterations = maxNumberOfIterations || 10,
+    var maxIterations = maxNumberOfIterations,
         currentIteration = 0;
 
     this.reverse = function (n) {
