@@ -2,24 +2,7 @@
 describe('Palindrome Numbers', function () {
     'use strict';
 
-    var Palindrome = require('../../../src/scripts/palindromeNumbers/palindromeNumbers.js'),
-        palindrome = new Palindrome(1, 1);
-
-    describe('#isPalindrome', function () {
-
-        it('if it is equally read from left to right that right to left', function () {
-            expect(palindrome.isPalindrome(11)).equals(true);
-            expect(palindrome.isPalindrome(101)).equals(true);
-            expect(palindrome.isPalindrome(123454321)).equals(true);
-        });
-
-        it('not if it is read differently from left to right that right to left', function () {
-            expect(palindrome.isPalindrome(12)).equals(false);
-            expect(palindrome.isPalindrome(123)).equals(false);
-            expect(palindrome.isPalindrome(9876543)).equals(false);
-        });
-
-    });
+    var Palindrome = require('../../../src/scripts/palindromeNumbers/palindromeNumbers.js');
 
     describe('#sumIsPalindrome', function () {
 
