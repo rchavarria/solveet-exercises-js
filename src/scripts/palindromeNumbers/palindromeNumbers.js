@@ -24,14 +24,13 @@ module.exports = function Palindrome(candidateNumber, maxNumberOfIterations) {
             return false;
         }
 
-        var sum = number + this.reverse(number),
-            palindrome = this.isPalindrome(sum);
+        number += this.reverse(number);
+        var palindrome = this.isPalindrome(number);
 
         if (palindrome) {
             return true;
         }
-        number = sum;
-        return this.sumIsPalindromeRecursively(sum);
+        return this.sumIsPalindromeRecursively(number);
     };
 
 };
