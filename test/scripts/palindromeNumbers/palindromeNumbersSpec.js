@@ -50,11 +50,6 @@ describe('Palindrome Numbers', function () {
             expect(severalIterationsPalindrome.sumIsPalindromeRecursively(48)).equals(true);
         });
 
-        it('limits the number of iterations', function () {
-            var limitedPalindrome = new Palindrome(1);
-            expect(limitedPalindrome.sumIsPalindromeRecursively(48)).equals(false);
-        });
-
     });
 
 });
