@@ -9,7 +9,7 @@
         return gulp
             .src(['gulpfile.js', 'src/scripts/**/*.js', 'test/scripts/**/*.js'])
             .pipe(jslint({
-                global: ['module', 'require', 'describe', 'it', 'expect']
+                global: ['console', 'module', 'require', 'describe', 'it', 'expect']
             }));
     });
 
