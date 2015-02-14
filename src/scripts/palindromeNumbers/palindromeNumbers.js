@@ -1,5 +1,8 @@
-module.exports = function Palindrome() {
+module.exports = function Palindrome(maxNumberOfIterations) {
     'use strict';
+
+    var maxIterations = maxNumberOfIterations || 10,
+        currentIteration = 0;
 
     this.reverse = function (n) {
         return parseInt(n.toString().split('').reverse().join(''), 10);
@@ -15,6 +18,11 @@ module.exports = function Palindrome() {
     };
 
     this.sumIsPalindromeRecursively = function (n) {
+        currentIteration += 1;
+        if (currentIteration > maxIterations) {
+            return false;
+        }
+
         var sum = n + this.reverse(n),
             palindrome = this.isPalindrome(sum);
 
