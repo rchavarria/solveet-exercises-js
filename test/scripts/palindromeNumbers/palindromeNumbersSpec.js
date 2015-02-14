@@ -2,10 +2,10 @@
 describe('Palindrome Numbers', function () {
     'use strict';
 
-    var Palindrome = require('../../../src/scripts/palindromeNumbers/palindromeNumbers.js');
+    var Palindrome = require('../../../src/scripts/palindromeNumbers/palindromeNumbers.js'),
+        palindrome = new Palindrome();
 
     describe('#reverse', function () {
-        var palindrome = new Palindrome();
 
         it('reverses digits', function () {
             expect(palindrome.reverse(11)).equals(11);
@@ -16,7 +16,6 @@ describe('Palindrome Numbers', function () {
     });
 
     describe('#isPalindrome', function () {
-        var palindrome = new Palindrome();
 
         it('if it is equally read from left to right that right to left', function () {
             expect(palindrome.isPalindrome(11)).equals(true);
@@ -33,7 +32,6 @@ describe('Palindrome Numbers', function () {
     });
 
     describe('#sumIsPalindrome', function () {
-        var palindrome = new Palindrome();
 
         it('the sum of a number and its reverse is palindrome', function () {
             expect(palindrome.sumIsPalindrome(11)).equals(true);
