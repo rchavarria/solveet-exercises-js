@@ -18,20 +18,19 @@ module.exports = function Palindrome(candidateNumber, maxNumberOfIterations) {
         return this.isPalindrome(sum);
     };
 
-    this.sumIsPalindromeRecursively = function (n) {
-        console.log(number);
-
+    this.sumIsPalindromeRecursively = function () {
         currentIteration += 1;
         if (currentIteration > maxIterations) {
             return false;
         }
 
-        var sum = n + this.reverse(n),
+        var sum = number + this.reverse(number),
             palindrome = this.isPalindrome(sum);
 
         if (palindrome) {
             return true;
         }
+        number = sum;
         return this.sumIsPalindromeRecursively(sum);
     };
 
