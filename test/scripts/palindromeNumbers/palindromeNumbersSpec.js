@@ -3,7 +3,7 @@ describe('Palindrome Numbers', function () {
     'use strict';
 
     var Palindrome = require('../../../src/scripts/palindromeNumbers/palindromeNumbers.js'),
-        palindrome = new Palindrome();
+        palindrome = new Palindrome(1);
 
     describe('#reverse', function () {
 
@@ -46,14 +46,13 @@ describe('Palindrome Numbers', function () {
     describe('#sumIsPalindromeRecursively', function () {
 
         it('iterates until it founds a palindrome number', function () {
-            expect(palindrome.sumIsPalindromeRecursively(48)).equals(true);
+            var severalIterationsPalindrome = new Palindrome(2);
+            expect(severalIterationsPalindrome.sumIsPalindromeRecursively(48)).equals(true);
         });
 
         it('limits the number of iterations', function () {
             var limitedPalindrome = new Palindrome(1);
             expect(limitedPalindrome.sumIsPalindromeRecursively(48)).equals(false);
-            limitedPalindrome = new Palindrome(2);
-            expect(palindrome.sumIsPalindromeRecursively(48)).equals(true);
         });
 
     });
