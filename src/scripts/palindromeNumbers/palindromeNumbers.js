@@ -1,7 +1,8 @@
-module.exports = function Palindrome(maxNumberOfIterations) {
+module.exports = function Palindrome(candidateNumber, maxNumberOfIterations) {
     'use strict';
 
-    var maxIterations = maxNumberOfIterations,
+    var number = candidateNumber,
+        maxIterations = maxNumberOfIterations,
         currentIteration = 0;
 
     this.reverse = function (n) {
@@ -18,6 +19,8 @@ module.exports = function Palindrome(maxNumberOfIterations) {
     };
 
     this.sumIsPalindromeRecursively = function (n) {
+        console.log(number);
+
         currentIteration += 1;
         if (currentIteration > maxIterations) {
             return false;
