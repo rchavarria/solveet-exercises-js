@@ -15,12 +15,13 @@ module.exports = function Palindrome() {
     };
 
     this.sumIsPalindromeRecursively = function (n) {
-        var palindrome = this.sumIsPalindrome(n);
+        var sum = n + this.reverse(n),
+            palindrome = this.isPalindrome(sum);
 
         if (palindrome) {
             return true;
         }
-        return this.sumIsPalindromeRecursively(n + this.reverse(n));
+        return this.sumIsPalindromeRecursively(sum);
     };
 
 };
