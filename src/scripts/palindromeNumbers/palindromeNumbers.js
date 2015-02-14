@@ -20,9 +20,7 @@ module.exports = function Palindrome(candidateNumber, maxNumberOfIterations) {
         }
 
         number += reverse(number);
-        var palindrome = isPalindrome(number);
-
-        if (palindrome) {
+        if (isPalindrome(number)) {
             return true;
         }
         return this.sumIsPalindrome(number);
