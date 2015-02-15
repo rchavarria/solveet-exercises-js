@@ -20,7 +20,7 @@ dependencies, then you can run `gulp`.
 
 ## Exercises
 
-- Palindrome numbers *NOT IMPLEMENTED YET*:
+- Palindrome numbers:
 [exercise](http://www.solveet.com/exercises/Numero-capicua-con-recursividad-en-cualquier-lenguaje/357),
 [tests](test/scripts/palindromeNumbers) and
 [solution](src/scripts/palindromeNumbers)
