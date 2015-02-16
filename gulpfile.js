@@ -3,7 +3,8 @@
 
     var gulp = require('gulp'),
         mocha = require('gulp-mocha'),
-        jslint = require('gulp-jslint');
+        jslint = require('gulp-jslint'),
+        babel = require('gulp-babel');
 
     gulp.task('jslint', function () {
         return gulp
@@ -22,5 +23,13 @@
     gulp.task('test-watch', function () {
         return gulp.watch(['src/scripts/**/*.js', 'test/scripts/**/*.js'], ['test']);
     });
+
+    gulp.task('babel', function () {
+        return gulp
+            .src('src/scripts/babelExample.js')
+            .pipe(babel())
+            .pipe(gulp.dest('dist'));
+    });
+
 }());
 
