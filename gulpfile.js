@@ -14,10 +14,13 @@
             }));
     });
 
-    gulp.task('test', ['jslint'], function () {
+    gulp.task('test', function () {
         return gulp
             .src(['test/bootstrap.js', 'test/scripts/**/*.js'])
-            .pipe(mocha({ reporter: 'spec' }));
+            .pipe(mocha({
+                reporter: 'spec',
+                compiler: 'js:babel/register'
+            }));
     });
 
     gulp.task('test-watch', function () {
