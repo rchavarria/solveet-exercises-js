@@ -26,7 +26,7 @@
 
     gulp.task('babel', function () {
         return gulp
-            .src('src/scripts/babelExample.js')
+            .src(['src/scripts/**/*.js', 'test/scripts/**/*.js'])
             .pipe(babel())
             .pipe(gulp.dest('dist'));
     });
