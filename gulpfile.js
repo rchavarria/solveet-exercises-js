@@ -2,7 +2,7 @@
     'use strict';
 
     var gulp = require('gulp'),
-        mocha = require('gulp-mocha'),
+        mocha = require('gulp-spawn-mocha'),
         jslint = require('gulp-jslint'),
         babel = require('gulp-babel');
 
@@ -19,7 +19,7 @@
             .src(['test/bootstrap.js', 'test/scripts/**/*.js'])
             .pipe(mocha({
                 reporter: 'spec',
-                compiler: 'js:babel/register'
+                compilers: 'js:babel/register'
             }));
     });
 
