@@ -16,7 +16,7 @@
             .pipe(jshint.reporter('jshint-stylish'));
     });
 
-    gulp.task('test', function () {
+    gulp.task('test', ['jshint'], function () {
         return gulp
             .src(['test/bootstrap.js', 'test/scripts/**/*.js'])
             .pipe(mocha({
