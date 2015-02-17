@@ -16,12 +16,11 @@
     "url": "https://github.com/rchavarria/solveet-exercises-js/issues"
   },
   "devDependencies": {
-    "gulp": "~3.8.8",
-    "sinon-chai": "~2.5.0",
+    "mocha": "~1.21.4",
     "chai": "~1.9.1",
     "sinon": "~1.10.3",
-    "mocha": "~1.21.4",
-    "gulp-jslint": "~0.2.2",
+    "sinon-chai": "~2.5.0",
+    "gulp": "~3.8.8",
     "gulp-babel": "~4.0.0",
     "gulp-spawn-mocha": "~2.0.1",
     "gulp-jshint": "~1.9.2",
