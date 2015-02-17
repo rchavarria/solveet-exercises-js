@@ -23,6 +23,8 @@
     "mocha": "~1.21.4",
     "gulp-jslint": "~0.2.2",
     "gulp-babel": "~4.0.0",
-    "gulp-spawn-mocha": "~2.0.1"
+    "gulp-spawn-mocha": "~2.0.1",
+    "gulp-jshint": "~1.9.2",
+    "jshint-stylish": "~1.0.0"
   }
 }
