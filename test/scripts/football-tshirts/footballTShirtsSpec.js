@@ -1,6 +1,6 @@
-describe('Football t-shirts', function () {
+describe('Football t-shirts', () => {
 
-    it('prints out numbers where (X + Y)^2 == XY', function () {
+    it('prints out numbers where (X + Y)^2 == XY', () => {
         for(let i = 0; i < 100; i++) {
             for (let j = 0; j < 100; j++) {
                 let square = Math.pow(i + j, 2);
