@@ -42,7 +42,7 @@ describe('Football t-shirts', () => {
             expect(second.square).equal('3025');
         });
 
-        it('generates the third number, and it is done', () => {
+        it('generates the third number', () => {
             var third,
                 tshirts = new TShirts(),
                 generator = tshirts.getNumbersGenerator();
@@ -68,27 +68,6 @@ describe('Football t-shirts', () => {
             itIsDone = generator.next();
             expect(itIsDone.value).equal(undefined);
             expect(itIsDone.done).equal(true);
-        });
-
-        it('loops with for...of', () => {
-            var tshirts = new TShirts(),
-                generator = tshirts.getNumbersGenerator();
-
-            for(var n of generator) {
-                console.log(n);
-            }
-        });
-
-    });
-
-    describe('spike a generator', () => {
-
-        it('runs', () => {
-            var tshirts = new TShirts();
-
-            for(var n of tshirts.tshirtNumberGenerator) {
-                console.log('fibo', n);
-            }
         });
 
     });
