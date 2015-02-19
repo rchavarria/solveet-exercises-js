@@ -1,5 +1,17 @@
 export default class TShirts {
 
+    constructor() {
+        this.tshirtNumberGenerator = {
+            [Symbol.iterator]: function*() {
+                var pre = 0, cur = 1;
+                for (;cur < 100;) {
+                    [pre, cur] = [cur, cur + pre];
+                    yield cur;
+                }
+            }
+        };
+    }
+
     getJoinedSquares() {
         var joined = [];
 
