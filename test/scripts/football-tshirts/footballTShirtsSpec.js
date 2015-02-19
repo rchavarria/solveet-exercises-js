@@ -23,9 +23,7 @@ describe('Football t-shirts', () => {
                 [Symbol.iterator]: function*() {
                     var pre = 0, cur = 1;
                     for (;;) {
-                        var temp = pre;
-                        pre = cur;
-                        cur += temp;
+                        [pre, cur] = [cur, cur + pre];
                         yield cur;
                     }
                 }
