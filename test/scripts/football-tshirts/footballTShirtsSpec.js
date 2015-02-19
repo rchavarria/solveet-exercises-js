@@ -16,4 +16,27 @@ describe('Football t-shirts', () => {
 
     });
 
+    describe('spike a generator', () => {
+
+        it('runs', () => {
+            var gen = {
+                [Symbol.iterator]: function*() {
+                    var pre = 0, cur = 1;
+                    for (;;) {
+                        var temp = pre;
+                        pre = cur;
+                        cur += temp;
+                        yield cur;
+                    }
+                }
+            };
+
+            for(var n of gen) {
+                if (n > 10) break;
+                console.log('fibo', n);
+            }
+        });
+
+    });
+
 });
