@@ -24,9 +24,10 @@ dependencies, then you can run `gulp`.
 [exercise](http://www.solveet.com/exercises/Numero-capicua-con-recursividad-en-cualquier-lenguaje/357),
 [tests](test/scripts/palindromeNumbers) and
 [solution](src/scripts/palindromeNumbers)
-- Football t-shirts *NOT IMPLEMENTED YET*:
+- Football t-shirts:
 [exercise](http://www.solveet.com/exercises/Camisetas-de-futbol-con-recursividad-en-cualquier-lenguaje/356),
-[solution]()
+[tests](test/scripts/football-tshirts) and
+[solution](src/scripts/football-tshirts)
 
 ## 
 
