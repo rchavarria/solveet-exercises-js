@@ -18,24 +18,56 @@ describe('Football t-shirts', () => {
 
     describe('#getNumbersGenerator', () => {
 
-        it('iterates over expected numbers', () => {
-            var tshirts = new TShirts(),
-                generator = tshirts.getNumbersGenerator(),
-                nextNumber = generator.next().value;
+        it('generates the first number', () => {
+            var first,
+                tshirts = new TShirts(),
+                generator = tshirts.getNumbersGenerator();
 
-            expect(nextNumber.left).equal('20');
-            expect(nextNumber.right).equal('25');
-            expect(nextNumber.square).equal('2025');
+            first = generator.next().value;
+            expect(first.left).equal('20');
+            expect(first.right).equal('25');
+            expect(first.square).equal('2025');
+        });
 
-            nextNumber = generator.next().value;
-            expect(nextNumber.left).equal('30');
-            expect(nextNumber.right).equal('25');
-            expect(nextNumber.square).equal('3025');
+        it('generates the second number', () => {
+            var second,
+                tshirts = new TShirts(),
+                generator = tshirts.getNumbersGenerator();
 
-            nextNumber = generator.next().value;
-            expect(nextNumber.left).equal('98');
-            expect(nextNumber.right).equal('01');
-            expect(nextNumber.square).equal('9801');
+            generator.next();
+
+            second = generator.next().value;
+            expect(second.left).equal('30');
+            expect(second.right).equal('25');
+            expect(second.square).equal('3025');
+        });
+
+        it('generates the third number, and it is done', () => {
+            var third,
+                tshirts = new TShirts(),
+                generator = tshirts.getNumbersGenerator();
+
+            generator.next();
+            generator.next();
+
+            third = generator.next().value;
+            expect(third.left).equal('98');
+            expect(third.right).equal('01');
+            expect(third.square).equal('9801');
+        });
+
+        it('after the third, it is done', () => {
+            var itIsDone,
+                tshirts = new TShirts(),
+                generator = tshirts.getNumbersGenerator();
+
+            generator.next();
+            generator.next();
+            generator.next();
+
+            itIsDone = generator.next();
+            expect(itIsDone.value).equal(undefined);
+            expect(itIsDone.done).equal(true);
         });
 
         it('loops with for...of', () => {
