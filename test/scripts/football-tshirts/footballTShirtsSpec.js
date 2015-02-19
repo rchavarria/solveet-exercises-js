@@ -22,7 +22,7 @@ describe('Football t-shirts', () => {
             var gen = {
                 [Symbol.iterator]: function*() {
                     var pre = 0, cur = 1;
-                    for (;;) {
+                    for (;cur < 100;) {
                         [pre, cur] = [cur, cur + pre];
                         yield cur;
                     }
@@ -30,7 +30,6 @@ describe('Football t-shirts', () => {
             };
 
             for(var n of gen) {
-                if (n > 10) break;
                 console.log('fibo', n);
             }
         });
