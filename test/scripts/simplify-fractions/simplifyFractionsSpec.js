@@ -26,6 +26,13 @@ describe('Fraction', () => {
             expect(reduced.denominator).equal(2);
         });
 
+        it('simplifies by the common factor', () => {
+            let reduced = new Fraction(2, 10).simplify();
+
+            expect(reduced.numerator).equal(1);
+            expect(reduced.denominator).equal(5);
+        });
+
     });
 
 });

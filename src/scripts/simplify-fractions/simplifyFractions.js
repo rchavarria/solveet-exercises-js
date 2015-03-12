@@ -16,7 +16,8 @@ export default class Fraction {
     }
 
     simplify() {
-        return this;
+        let gcd = this.gcd(this.numerator, this.denominator);
+        return new Fraction(this.numerator / gcd, this.denominator / gcd);
     }
 
 }
