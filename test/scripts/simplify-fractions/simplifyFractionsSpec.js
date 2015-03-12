@@ -18,4 +18,14 @@ describe('Fraction', () => {
 
     });
 
+    describe('#simplify', () => {
+
+        it('returns the same fraction if can not be reduced', () => {
+            let reduced = new Fraction(1, 2).simplify();
+            expect(reduced.numerator).equal(1);
+            expect(reduced.denominator).equal(2);
+        });
+
+    });
+
 });

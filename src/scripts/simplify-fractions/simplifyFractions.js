@@ -15,5 +15,9 @@ export default class Fraction {
         return a;
     }
 
+    simplify() {
+        return this;
+    }
+
 }
 
