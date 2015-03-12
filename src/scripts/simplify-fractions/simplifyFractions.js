@@ -1,7 +1,13 @@
 export default class Fraction {
 
     gcd(a, b) {
-        return 1;
+        while (b != 0) {
+            let t = b;
+            b = a % b;
+            a = t;
+        }
+
+        return a;
     }
 
 }
