@@ -22,18 +22,11 @@ describe('Fraction', () => {
 
         it('returns the same fraction if can not be reduced', () => {
             expect(new Fraction(1, 2).simplify()).deep.equal(new Fraction(1, 2));
+            expect(new Fraction(2, 1).simplify()).deep.equal(new Fraction(2, 1));
         });
 
         it('simplifies by the common factor', () => {
             expect(new Fraction(2, 10).simplify()).deep.equal(new Fraction(1, 5));
-        });
-
-        it('does not mofidy already simplified members', () => {
-            expect(new Fraction(2, 1).simplify()).deep.equal(new Fraction(2, 1));
-        });
-
-        it('reduces members by a common factor', () => {
-            expect(new Fraction(3, 6).simplify()).deep.equal(new Fraction(1, 2));
         });
 
         it('does not reduce a fraction whose members are primes', () => {
