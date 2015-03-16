@@ -28,6 +28,22 @@ describe('Fraction', () => {
             expect(new Fraction(2, 10).simplify()).deep.equal(new Fraction(1, 5));
         });
 
+        it('does not mofidy already simplified members', () => {
+            expect(new Fraction(2, 1).simplify()).deep.equal(new Fraction(2, 1));
+        });
+
+        it('reduces members by a common factor', () => {
+            expect(new Fraction(3, 6).simplify()).deep.equal(new Fraction(1, 2));
+        });
+
+        it('does not reduce a fraction whose members are primes', () => {
+            expect(new Fraction(13, 47).simplify()).deep.equal(new Fraction(13, 47));
+        });
+
+        it('reduces a fraction by several common factors', () => {
+            expect(new Fraction(1848, 990).simplify()).deep.equal(new Fraction(28, 15));
+        });
+
     });
 
 });
