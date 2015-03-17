@@ -1,3 +1,5 @@
+import gcd from './gcd.js';
+
 export default class Fraction {
 
     constructor(numerator, denominator) {
@@ -10,15 +12,5 @@ export default class Fraction {
         return new Fraction(this.numerator / divisor, this.denominator / divisor);
     }
 
-}
-
-function gcd(a, b) {
-    while (b !== 0) {
-        let t = b;
-        b = a % b;
-        a = t;
-    }
-
-    return a;
 }
 
