@@ -10,7 +10,7 @@ export default class Fraction {
     }
 
     simplify() {
-        let divisor = this.gcd(this.numerator, this.denominator);
+        let divisor = gcd(this.numerator, this.denominator);
         return new Fraction(this.numerator / divisor, this.denominator / divisor);
     }
 
