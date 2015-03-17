@@ -6,19 +6,23 @@ export default class Fraction {
     }
 
     gcd(a, b) {
-        while (b !== 0) {
-            let t = b;
-            b = a % b;
-            a = t;
-        }
-
-        return a;
+        return gcd(a, b);
     }
 
     simplify() {
-        let gcd = this.gcd(this.numerator, this.denominator);
-        return new Fraction(this.numerator / gcd, this.denominator / gcd);
+        let divisor = this.gcd(this.numerator, this.denominator);
+        return new Fraction(this.numerator / divisor, this.denominator / divisor);
     }
 
+}
+
+function gcd(a, b) {
+    while (b !== 0) {
+        let t = b;
+        b = a % b;
+        a = t;
+    }
+
+    return a;
 }
 
