@@ -25,6 +25,7 @@
     "gulp-spawn-mocha": "~2.0.1",
     "gulp-jshint": "~1.9.2",
     "jshint-stylish": "~1.0.0",
-    "babel": "~4.0.2"
+    "babel": "~4.0.2",
+    "gulp-eslint": "~0.7.0"
   }
 }
