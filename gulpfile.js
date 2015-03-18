@@ -4,6 +4,7 @@
     var gulp = require('gulp'),
         mocha = require('gulp-spawn-mocha'),
         jshint = require('gulp-jshint'),
+        eslint = require('gulp-eslint'),
         babel = require('gulp-babel');
 
     gulp.task('jshint', function () {
@@ -14,6 +15,14 @@
                 esnext: true
             }))
             .pipe(jshint.reporter('jshint-stylish'));
+    });
+
+    gulp.task('eslint', function () {
+        return gulp
+            .src(['gulpfile.js', 'src/scripts/**/*.js', 'test/scripts/**/*.js'])
+            .pipe(eslint())
+            .pipe(eslint.format())
+            .pipe(eslint.failOnError());
     });
 
     gulp.task('test', ['jshint'], function () {
