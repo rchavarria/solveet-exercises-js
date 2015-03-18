@@ -1,6 +1,5 @@
 
 describe('Palindrome Numbers', function () {
-    'use strict';
 
     var Palindrome = require('../../../src/scripts/palindromeNumbers/palindromeNumbers.js');
 

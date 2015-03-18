@@ -1,5 +1,4 @@
 module.exports = function Palindrome(candidateNumber, maxNumberOfIterations) {
-    'use strict';
 
     var number = candidateNumber,
         maxIterations = maxNumberOfIterations,
