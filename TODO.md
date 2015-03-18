@@ -1,7 +1,8 @@
 # TASKS
+- Use [ESLint](http://davidwalsh.name/eslint) to lint JavaScript code
 
 # TODO list
-- Use [ESLint](http://davidwalsh.name/eslint) to lint JavaScript code
+- Migrate 'palindromeNumbers' exercise to ES6
 
 # HOWTO
 
