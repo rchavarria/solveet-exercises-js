@@ -4,6 +4,9 @@
         // TODO Configure this in the `test` folder, not globally
         "mocha": true
     },
+    "rules": {
+        "quotes": [2, "single"]
+    },
     "ecmaFeatures": {
         "arrowFunctions": true,
         "binaryLiterals": false,
