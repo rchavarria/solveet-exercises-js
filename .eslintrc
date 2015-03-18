@@ -89,7 +89,8 @@
         // "yoda": 
 
         // Strict mode
-        // "strict": 
+        "no-extra-strict": false,
+        "strict": [2, "function"],
 
         // Variables
         // "no-catch-shadow": 
@@ -172,15 +173,20 @@
         "no-plusplus": false,
 
     },
+    "globals": {
+        "expect": true,
+        "module": true,
+        "require": true
+    },
     "ecmaFeatures": {
         "arrowFunctions": true,
         "binaryLiterals": false,
-        "blockBindings": false,
+        "blockBindings": true,
         "classes": true,
         "defaultParams": false,
         "destructuring": false,
         "forOf": false,
-        "generators": false,
+        "generators": true,
         "modules": true,
         "objectLiteralComputedProperties": false,
         "objectLiteralDuplicateProperties": false,
