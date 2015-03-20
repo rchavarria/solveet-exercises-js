@@ -16,6 +16,7 @@
     "url": "https://github.com/rchavarria/solveet-exercises-js/issues"
   },
   "devDependencies": {
+    "babel": "~4.0.2",
     "mocha": "~1.21.4",
     "chai": "~1.9.1",
     "sinon": "~1.10.3",
@@ -23,9 +24,6 @@
     "gulp": "~3.8.8",
     "gulp-babel": "~4.0.0",
     "gulp-spawn-mocha": "~2.0.1",
-    "gulp-jshint": "~1.9.2",
-    "jshint-stylish": "~1.0.0",
-    "babel": "~4.0.2",
     "gulp-eslint": "~0.7.0"
   }
 }
