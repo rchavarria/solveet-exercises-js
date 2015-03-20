@@ -8,35 +8,34 @@
         // full documentation here : http://eslint.org/docs/rules
 
         // Possible errors
-        // "comma-dangle": 
-        // "no-comma-dangle": 
-        // "no-cond-assign": 
-        // "no-console": 
-        // "no-constant-condition": 
-        // "no-control-regex": 
-        // "no-debugger": 
-        // "no-dupe-args": 
-        // "no-dupe-keys": 
-        // "no-duplicate-case": 
-        // "no-empty": 
-        // "no-empty-class": 
-        // "no-ex-assign": 
-        // "no-extra-boolean-cast": 
-        // "no-extra-parens": 
-        // "no-extra-semi": 
-        // "no-func-assign": 
-        // "no-inner-declarations": 
-        // "no-invalid-regexp": 
-        // "no-irregular-whitespace": 
-        // "no-negated-in-lhs": 
-        // "no-obj-calls": 
-        // "no-regex-spaces": 
-        // "no-reserved-keys": 
-        // "no-sparse-arrays": 
-        // "no-unreachable": 
-        // "use-isnan": 
-        // "valid-jsdoc": 
-        // "valid-typeof ": 
+        "comma-dangle": [2, "never"], // don't let a comma at the end of object properties or array element
+        "no-cond-assign": [2, "always"], // no assignments in conditional statements
+        "no-console": true,  // no console.log() statements in production code
+        "no-constant-condition": true, // no constants in conditional statements
+        "no-control-regex": true,  // no control characters in regex's
+        "no-debugger": true, // no debugger in productin code
+        "no-dupe-args": true, // no duplicated arguments in functions
+        "no-dupe-keys": true, // no duplicated keys when creating object literals
+        "no-duplicate-case": true, // no duplicated `case` in `switch` statements
+        "no-empty": true, // no empty blocks
+        "no-empty-class": true, // no empty character class in regex's
+        "no-ex-assign": true, // do not assign any value to an Exception raised
+        "no-extra-boolean-cast": true, // do not use !!falseExpression to cast to boolean
+        "no-extra-parens": true,  // do not use extra parenthesis
+        "no-extra-semi": true,  // do not use extra semicolons
+        "no-func-assign": true, // do not overwrite variables declared as functions
+        "no-inner-declarations": [2, "both"], // only declare var's and funct's on function scope
+        "no-invalid-regexp": true,  // validates string arguments passed to RegExp constructor
+        "no-irregular-whitespace": true, // detects special characters used as spaces
+        "no-negated-in-lhs": true,  // do not use negation in the left operand in an `in` expression
+        "no-obj-calls": true, // prevent calling global objects as if they were functions
+        "no-regex-spaces": true, // do not use multiple spaces in regex's
+        "no-reserved-keys": true, // do not use reserved words as object literal keys
+        "no-sparse-arrays": true, // do not use sparse arrays (empty elements)
+        "no-unreachable": true, // detects unreachable statements (after return, throw,...)
+        "use-isnan": true, // do not compare with `NaN` value, use isNan() instead
+        "valid-jsdoc": true, // ensure JSDoc comments are valid
+        "valid-typeof ": true, // ensure that typeof is used correctly (compared to right string value)
 
         // Best practices
         // "block-scoped-var": 
