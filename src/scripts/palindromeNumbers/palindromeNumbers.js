@@ -1,3 +1,8 @@
+
+function reverse(n) {
+    return parseInt(n.toString().split('').reverse().join(''), 10);
+}
+
 export default class Palindrome {
 
     constructor(candidateNumber, maxNumberOfIterations) {
@@ -6,12 +11,8 @@ export default class Palindrome {
         this.currentIteration = 0;
     }
 
-    reverse(n) {
-        return parseInt(n.toString().split('').reverse().join(''), 10);
-    }
-
     isPalindrome(n) {
-        return n.toString() === this.reverse(n).toString();
+        return n.toString() === reverse(n).toString();
     }
 
     sumIsPalindrome() {
@@ -20,7 +21,7 @@ export default class Palindrome {
             return false;
         }
 
-        this.number += this.reverse(this.number);
+        this.number += reverse(this.number);
         if (this.isPalindrome(this.number)) {
             return true;
         }
