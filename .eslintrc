@@ -38,54 +38,54 @@
         "valid-typeof ": true, // ensure that typeof is used correctly (compared to right string value)
 
         // Best practices
-        // "block-scoped-var": 
-        // "complexity": 
-        // "consistent-return": 
-        // "curly": 
+        "block-scoped-var": false,
+        // "complexity": [1, <complexity limit>]  // http://eslint.org/docs/rules/complexity.html
+        "consistent-return": true,  // require return statements to always or never specify values (do not mix them)
+        "curly": true,  // specify curly braces for all control statements
         // "default-case": 
-        // "dot-notation": 
-        // "eqeqeq": 
-        // "guard-for-in": 
-        // "no-alert": 
+        "dot-notation": true,  // recommends use of dot notation wherever possible
+        "eqeqeq": true,
+        "guard-for-in": true,  // make sure for-in loops have an if statement
+        "no-alert": true, // disallow the use of alert, confirm or prompt
         // "no-caller": 
         // "no-div-regex": 
-        // "no-else-return": 
+        "no-else-return": true, // disallow else after a return in an if block
         // "no-empty-label": 
-        // "no-eq-null": 
-        // "no-eval": 
-        // "no-extend-native": 
-        // "no-extra-bind": 
-        // "no-fallthrough": 
-        // "no-floating-decimal": 
-        // "no-implied-eval": 
-        // "no-iterator": 
-        // "no-labels": 
-        // "no-lone-blocks": 
-        // "no-loop-func": 
-        // "no-multi-spaces": 
-        // "no-multi-str": 
-        // "no-native-reassign": 
-        // "no-new": 
-        // "no-new-func": 
-        // "no-new-wrappers": 
-        // "no-octal": 
-        // "no-octal-escape": 
-        // "no-process-env": 
-        // "no-proto": 
-        // "no-redeclare": 
-        // "no-return-assign": 
+        "no-eq-null": true,  // force comparisons to null with ===
+        "no-eval": true,  // disallow the use of eval()
+        "no-extend-native": true, // disallow extend native objects (Object.prototype ...)
+        "no-extra-bind": true,  // disallow unnecessary funciton binding
+        "no-fallthrough": true,  // disallow fallthrough of case statements (case sttmnts without break)
+        "no-floating-decimal": true,  // disallow numbers such as .7   2.   -.5   etc
+        "no-implied-eval": true,  // disallow eval()-like methods
+        "no-iterator": true,  // disallow use of __iterator__ property
+        "no-labels": true,
+        "no-lone-blocks": true,  // disallow unnecessary nested blocks
+        "no-loop-func": true,  // disallow creation of functions within loops
+        "no-multi-spaces": true,
+        "no-multi-str": true,
+        "no-native-reassign": true,
+        "no-new": true,  // disallow use of new operator when not part of the assignment
+        "no-new-func": true,  // disallow use new Function(...)
+        "no-new-wrappers": true,  // disallow new instances of String, Number and Boolean
+        "no-octal": true,
+        "no-octal-escape": true,
+        "no-process-env": true,  // disallow use of process.env (commonly in NodeJS)
+        "no-proto": true,  // disallow use of __proto__ property
+        "no-redeclare": true,  // disallow multiple declarations of the same variable
+        "no-return-assign": true,  // disallow assignments in return statements
         // "no-script-url": 
         // "no-self-compare": 
-        // "no-sequences": 
-        // "no-throw-literal": 
-        // "no-unused-expressions": 
-        // "no-void": 
-        // "no-warning-comments": 
-        // "no-with": 
-        // "radix": 
-        // "vars-on-top": 
-        // "wrap-iife": 
-        // "yoda": 
+        "no-sequences": true,  // disallow the use of the comma operator
+        "no-throw-literal": true,  // restricts what can be thrown as an exception
+        "no-unused-expressions": true,
+        "no-void": true,
+        "no-warning-comments": false,
+        "no-with": true,
+        "radix": true,  // forse use of second argument for parseInt()
+        "vars-on-top": true,
+        "wrap-iife": true,
+        "yoda": [2, "never"],
 
         // Strict mode
         "no-extra-strict": false,
