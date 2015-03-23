@@ -1,4 +1,4 @@
-import Palindrome from '../../../src/scripts/palindromeNumbers/palindromeNumbers.es6.js';
+import Palindrome from '../../../src/scripts/palindromeNumbers/palindromeNumbers.js';
 
 describe('Palindrome Numbers', function () {
 
