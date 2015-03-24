@@ -92,16 +92,16 @@
         "strict": [2, "function"],
 
         // Variables
-        // "no-catch-shadow": 
-        // "no-delete-var": 
-        // "no-label-var": 
-        // "no-shadow": 
-        // "no-shadow-restricted-names": 
-        // "no-undef": 
-        // "no-undef-init": 
-        // "no-undefined": 
-        // "no-unused-vars": 
-        // "no-use-before-define": 
+        "no-catch-shadow": true,
+        "no-delete-var": true,
+        "no-label-var": true,
+        "no-shadow": true,  // disallow declaration of variables already declared in the outer scope
+        "no-shadow-restricted-names": true,  // disallow shadowing names such as arguments
+        "no-undef": true,  // disallow use of undeclared variables (unless in a /*global */ comment)
+        "no-undef-init": true,  // disallow use of undefined when initializing vars
+        "no-undefined": true,  // disallow use of "undefined" variable
+        "no-unused-vars": true,
+        "no-use-before-define": true,
 
         // Node.js
         // "handle-callback-err": 
