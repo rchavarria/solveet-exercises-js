@@ -1,4 +1,12 @@
-import gcd from './gcd.js';
+function gcd(a, b) {
+    while (b !== 0) {
+        let t = b;
+        b = a % b;
+        a = t;
+    }
+
+    return a;
+}
 
 export default class Fraction {
 
