@@ -28,6 +28,10 @@ dependencies, then you can run `gulp`.
 [exercise](http://www.solveet.com/exercises/Camisetas-de-futbol-con-recursividad-en-cualquier-lenguaje/356),
 [tests](test/scripts/football-tshirts) and
 [solution](src/scripts/football-tshirts)
+- Simplify fractions:
+[exercise](http://www.solveet.com/exercises/Simplifica-Fraccion-con-recursividad-en-cualquier-lenguaje/353),
+[tests](test/scripts/simplify-fractions) and 
+[solution](src/scripts/simplify-fractions)
 
 ## 
 
