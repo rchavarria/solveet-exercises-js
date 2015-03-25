@@ -113,17 +113,17 @@
         // "no-sync": 
 
         // Stylistic issues
-        // "indent": 
-        // "brace-style": 
-        // "camelcase": 
-        // "comma-spacing": 
-        // "comma-style": 
-        // "consistent-this": 
-        // "eol-last": 
-        // "func-names": 
-        // "func-style": 
-        // "key-spacing": 
-        // "max-nested-callbacks": 
+        "indent": [2, 4],  // 4 spaces of indentation
+        "brace-style": [2, "1tbs", { "allowSingleLine": true }],  // one true brace style :D
+        "camelcase": true,
+        "comma-spacing": [2, { "before": false, "after": true }],
+        "comma-style": [2, "last"],
+        "consistent-this": [1, "self"],  // the only allowed alias for this is self
+        "eol-last": true,
+        "func-names": true,  // disallow use of anonymous functions
+        "func-style": [2, "declaration"],  // disallow declaring functions with expressions, such as var foo = function () {}
+        "key-spacing": [2, { "beforeColon": false, "afterColon": true }],
+        "max-nested-callbacks": [2, 3],  // disallow more than 3 nested callbacks
         // "new-cap": 
         // "new-parens": 
         // "no-array-constructor": 
