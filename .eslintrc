@@ -106,9 +106,9 @@
         // Node.js
         // "handle-callback-err": 
         // "no-mixed-requires": 
-        // "no-new-require": 
-        // "no-path-concat": 
-        // "no-process-exit": 
+        "no-new-require": true,
+        "no-path-concat": true,  // disallow concat string with __dirname or __filename, use path.join() or path.resolve() instead
+        "no-process-exit": true,
         // "no-restricted-modules": 
         // "no-sync": 
 
