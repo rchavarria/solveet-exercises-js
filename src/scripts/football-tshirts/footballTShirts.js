@@ -3,14 +3,14 @@ export default class TShirts {
     getJoinedSquares() {
         var joined = [];
 
-        for(let i = 0; i < 100; i++) {
+        for (let i = 0; i < 100; i++) {
             for (let j = 0; j < 100; j++) {
                 let square = Math.pow(i + j, 2).toString(),
                     paddedI = this.pad(i),
                     paddedJ = this.pad(j);
 
                 if (square === (paddedI + paddedJ)) {
-                    joined.push([paddedI, paddedJ, square]);
+                    joined.push([ paddedI, paddedJ, square ]);
                 }
             }
         }
@@ -20,7 +20,7 @@ export default class TShirts {
 
     getNumbersGenerator() {
         function* generator(tshirt) {
-            for(let i = 0; i < 100; i++) {
+            for (let i = 0; i < 100; i++) {
                 for (let j = 0; j < 100; j++) {
                     let square = Math.pow(i + j, 2).toString(),
                         paddedI = tshirt.pad(i),
