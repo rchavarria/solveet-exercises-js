@@ -124,40 +124,40 @@
         "func-style": [2, "declaration"],  // disallow declaring functions with expressions, such as var foo = function () {}
         "key-spacing": [2, { "beforeColon": false, "afterColon": true }],
         "max-nested-callbacks": [2, 3],  // disallow more than 3 nested callbacks
-        // "new-cap": 
-        // "new-parens": 
-        // "no-array-constructor": 
-        // "no-inline-comments": 
-        // "no-lonely-if": 
-        // "no-mixed-spaces-and-tabs": 
-        // "no-multiple-empty-lines": 
-        // "no-nested-ternary": 
-        // "no-new-object": 
+        "new-cap": true,  // require capital letter for constructors
+        "new-parens": true,  // forces the use of parenthesis when calling constructors, even if they have no arguments
+        "no-array-constructor": true,  // disallow the use of Array constructor
+        "no-inline-comments": false,  // allow inline comments after some code
+        "no-lonely-if": true,  // disallow an if as the only statement in an else block (replace with else-if statement)
+        "no-mixed-spaces-and-tabs": true,
+        "no-multiple-empty-lines": true,
+        "no-nested-ternary": true,
+        "no-new-object": true,
         // "no-space-before-semi": 
-        // "no-spaced-func": 
+        "no-spaced-func": true,  // force function calls like fn() instead of fn ()
         // "no-ternary": 
-        // "no-trailing-spaces": 
-        // "no-underscore-dangle": 
-        // "no-wrap-func": 
-        // "one-var": 
-        // "operator-assignment": 
+        "no-trailing-spaces": true,
+        "no-underscore-dangle": true,
+        "no-wrap-func": true,  // disallow wrapping of non-IIFE functions
+        "one-var": true,
+        "operator-assignment": [2, "always"],  // forces write x += 1 instead of x = x + 1
         // "padded-blocks": 
         // "quote-props": 
         "quotes": [2, "single"],
-        // "semi": 
-        // "semi-spacing": 
-        // "sort-vars": 
+        "semi": [2, "always"],
+        "semi-spacing": [2, { "before": false, "after": true }],
+        "sort-vars": false,
         // "space-after-function-name": 
-        // "space-after-keywords": 
-        // "space-before-blocks": 
-        // "space-before-function-parentheses": 
-        // "space-in-brackets": 
-        // "space-in-parens": 
-        // "space-infix-ops": 
-        // "space-return-throw-case": 
-        // "space-unary-ops": 
-        // "spaced-line-comment": 
-        // "wrap-regex": 
+        "space-after-keywords": [2, "always"],
+        "space-before-blocks": [2, "always"],
+        "space-before-function-parentheses": [2, { "anonymous": "always", "named": "never" }],
+        "space-in-brackets": [2, "always"],
+        "space-in-parens": [2, "never"],
+        "space-infix-ops": true,
+        "space-return-throw-case": true,
+        "space-unary-ops": [2, { "words": true, "nonwords": false }],
+        "spaced-line-comment": [2, "always"],
+        "wrap-regex": true,
 
         // ECMAScript 6
         // "no-var": 
