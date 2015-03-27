@@ -1,20 +1,8 @@
 function endsWith(number, suffix) {
-    if (suffix === 0) {
-        return true;
-    }
-
     return number.toString().endsWith(suffix.toString());
 }
 
 describe('Truck Fleet', () => {
-
-    describe('hook', () => {
-
-        it('runs test', () => {
-            expect(1).equal(2 - 1);
-        });
-
-    });
 
     describe('#endsWith', () => {
 
