@@ -160,8 +160,8 @@
         "wrap-regex": true,
 
         // ECMAScript 6
-        // "no-var": 
-        // "generator-star-spacing": 
+        "no-var": true,
+        "generator-star-spacing": [2, "before"],
 
         // Legacy
         // "max-depth": 
