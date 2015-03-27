@@ -26,6 +26,12 @@ describe('Truck Fleet', () => {
             expect(endsWith(10, 0)).equal(true);
         });
 
+        it('returns false when Number does not end with a several digits suffix', () => {
+            expect(endsWith(12345, 10)).equal(false);
+            expect(endsWith(12345, 123)).equal(false);
+            expect(endsWith(12345, 1234)).equal(false);
+        });
+
     });
 
 });
