@@ -1,4 +1,8 @@
 function endsWith(number, suffix) {
+    if (suffix === 0) {
+        return true;
+    }
+
     return false;
 }
 
@@ -14,8 +18,12 @@ describe('Truck Fleet', () => {
 
     describe('#endsWith', () => {
 
-        it('returns false when a number does not end with the given suffix', () => {
+        it('returns false when a number does not end with a one digit suffix', () => {
             expect(endsWith(10, 1)).equal(false);
+        });
+
+        it('return true when a number ends with a one digit suffix', () => {
+            expect(endsWith(10, 0)).equal(true);
         });
 
     });
