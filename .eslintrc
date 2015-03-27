@@ -164,11 +164,11 @@
         "generator-star-spacing": [2, "before"],
 
         // Legacy
-        // "max-depth": 
-        // "max-len": 
-        // "max-params": 
-        // "max-statements": 
-        // "no-bitwise": 
+        "max-depth": [1, 3],
+        "max-len": [1, 100],
+        "max-params": [1, 3],
+        "max-statements": [1, 10],
+        "no-bitwise": true,
         "no-plusplus": false,
 
     },
