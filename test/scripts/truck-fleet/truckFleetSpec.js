@@ -26,6 +26,14 @@ describe('Truck Fleet', () => {
 
     });
 
+    describe('#isAllowed', () => {
+
+        it('is not allowed when it is greater than 500', () => {
+            expect(new TruckNumber(501).isAllowed()).equal(false);
+        });
+
+    });
+
 });
 
 

@@ -8,5 +8,10 @@ export default class TruckNumber {
     endsWith(suffix) {
         return this.number.toString().endsWith(suffix.toString());
     }
+
+    isAllowed() {
+        return false;
+    }
+
 }
 
