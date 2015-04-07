@@ -1,7 +1,8 @@
 import TruckNumber from '../../../src/scripts/truck-fleet/truckFleet.js';
 
 function endsWith(number, suffix) {
-    return number.toString().endsWith(suffix.toString());
+    let n = new TruckNumber(number);
+    return n.endsWith(suffix);
 }
 
 describe('Truck Fleet', () => {
