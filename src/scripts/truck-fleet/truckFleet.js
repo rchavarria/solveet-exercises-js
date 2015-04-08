@@ -14,7 +14,8 @@ export default class TruckNumber {
     }
 
     isAllowed() {
-        return false;
+        let square = this.number * this.number;
+        return numberEndsWith(square, this.number);
     }
 
 }
