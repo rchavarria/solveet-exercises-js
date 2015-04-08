@@ -30,8 +30,7 @@ describe('Truck Fleet', () => {
 
         it('is not allowed when it is greater than 500', () => {
             expect(new TruckNumber(501).isAllowed()).equal(false);
-            // TODO  Add a case when the square ends with the number but its
-            // greater than 500
+            expect(new TruckNumber(625).isAllowed()).equal(false);
         });
 
         it('is allowed when the square of the number ends with the number itself', () => {
