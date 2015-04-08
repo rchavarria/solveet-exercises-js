@@ -10,10 +10,6 @@ export default class TruckNumber {
         this.number = number;
     }
 
-    endsWith(suffix) {
-        return numberEndsWith(this.number, suffix);
-    }
-
     isAllowed() {
         if (this.number > this.maxAllowedNumber) {
             return false;
