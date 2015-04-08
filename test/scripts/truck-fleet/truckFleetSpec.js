@@ -21,9 +21,9 @@ describe('Truck Fleet', () => {
 
     });
 
-    describe('Find truck numbers', () => {
+    describe('Solution', () => {
 
-        it('iterates from 1 to 500', () => {
+        it('prints how many trucks and their numbers', () => {
             let allowedNumbers = [];
             for (let i = 1; i <= 500; i++) {
                 let allowed = new TruckNumber(i).isAllowed();
@@ -32,7 +32,8 @@ describe('Truck Fleet', () => {
                 }
             }
 
-            console.log('Allowed numbers for trucks:', allowedNumbers);
+            console.log('"La tortuga" tiene', allowedNumbers.length, 'camiones');
+            console.log('Y sus números son:', allowedNumbers);
         });
 
     });
