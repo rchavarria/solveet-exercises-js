@@ -1,4 +1,8 @@
 
+function numberEndsWith(number, suffix) {
+    return number.toString().endsWith(suffix.toString());
+}
+
 export default class TruckNumber {
 
     constructor(number) {
@@ -6,7 +10,7 @@ export default class TruckNumber {
     }
 
     endsWith(suffix) {
-        return this.number.toString().endsWith(suffix.toString());
+        return numberEndsWith(this.number, suffix);
     }
 
     isAllowed() {

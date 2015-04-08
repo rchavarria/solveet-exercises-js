@@ -32,6 +32,11 @@ describe('Truck Fleet', () => {
             expect(new TruckNumber(501).isAllowed()).equal(false);
         });
 
+        // it('is allowed when the square of the number ends with the number itself', () => {
+        //     expect(new TruckNumber(5).isAllowed()).equal(true);
+        //     expect(new TruckNumber(25).isAllowed()).equal(true);
+        // });
+
     });
 
 });
